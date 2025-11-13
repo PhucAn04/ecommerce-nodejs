@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-nodejs",
+  "version": "1.0.0",
+  "description": "nodejs ecommerce",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/PhucAn04/ecommerce-nodejs)"
+  },
+  "keywords": [
+    "nodejs",
+    "ecommerce"
+  ],
+  "author": {
+    "name": "Phuc An"
+  },
+  "license": "ISC"
+}
