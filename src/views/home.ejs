@@ -16,8 +16,30 @@
     ></script>
   </head>
   <body>
-    <h1>Welcome to the Home Page</h1>
-    <!-- <img src="/images/testimage.png" alt="Home Image" /> -->
-    <a href="/create-user" class="btn btn-warning">Create a new user</a>
+    <div style="margin: 25">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <h1>List Users:</h1>
+        <div>
+          <a href="/create-user" class="btn btn-warning">Create a new user</a>
+        </div>
+      </div>
+      <hr />
+      <table class="table table-hover table-border">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>PhucAn</td>
+          <td>phucan123@gmail.com</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
