@@ -2,7 +2,6 @@
 import express from "express";
 import dotenv from "dotenv";
 import webRoutes from "./routes/web";
-import getConnection from "./config/database";
 
 dotenv.config();
 
@@ -23,8 +22,6 @@ app.use(express.static("public"));
 
 // config routes
 webRoutes(app);
-
-getConnection();
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
