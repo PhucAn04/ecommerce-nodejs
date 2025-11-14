@@ -9,7 +9,15 @@ const getConnection = async () => {
     port: 3306,
   });
 
-  return connection;
+  // A simple SELECT query
+  try {
+    const [results, fields] = await connection.query("SELECT * FROM `users`");
+
+    console.log(results); // results contains rows returned by server
+    console.log(fields); // fields contains extra meta data about results, if available
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 export default getConnection;
